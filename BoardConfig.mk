@@ -102,3 +102,4 @@ TARGET_POWERHAL_VARIANT :=
 
 # External apps on SD
 TARGET_EXTERNAL_APPS = sdcard1
+# Probably will be removed
