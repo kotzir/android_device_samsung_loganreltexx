@@ -210,4 +210,6 @@
 
          The default value is false which represents AOSP behavior. -->
     <bool name="config_smsUseExpectMore">true</bool>
+    <!-- SD card is hot-pluggable on this platform -->
+    <bool name="config_batterySdCardAccessibility">true</bool>
 </resources>
