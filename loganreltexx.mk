@@ -41,6 +41,10 @@ PRODUCT_BOOT_JARS += qcmediaplayer
 TARGET_SCREEN_HEIGHT := 800
 TARGET_SCREEN_WIDTH := 480
 
+# Genlock is needed for camera blob
+PRODUCT_PACKAGES += \
+    libgenlock
+
 # NFC packages
 PRODUCT_PACKAGES += \
     nfc_nci.msm8960 \
