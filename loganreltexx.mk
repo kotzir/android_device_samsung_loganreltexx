@@ -138,7 +138,7 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.vendor.extension_library=/system/lib/libqc-opt.so
 
-# Wlan needs this
+# Net Interface needs this
 PRODUCT_PACKAGES += \
     libnetcmdiface
 
