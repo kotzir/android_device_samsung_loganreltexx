@@ -142,7 +142,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PACKAGES += \
     libnetcmdiface
 
-
 # Common build properties
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.product_ship=true \
