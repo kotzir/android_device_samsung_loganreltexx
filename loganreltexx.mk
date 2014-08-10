@@ -140,7 +140,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Wlan needs this
 PRODUCT_PACKAGES += \
-	libnetcmdiface
+    libnetcmdiface
 
 
 # Common build properties
