@@ -138,6 +138,11 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.vendor.extension_library=/system/lib/libqc-opt.so
 
+# Wlan needs this
+PRODUCT_PACKAGES += \
+	libnetcmdiface
+
+
 # Common build properties
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.product_ship=true \
