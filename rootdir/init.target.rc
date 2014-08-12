@@ -314,16 +314,6 @@ on post-fs-data
     chmod 0660 /dev/pn544
     chown nfc nfc /dev/pn544
 
-    # NFC_BROADCOM
-    chmod 0600 /dev/bcm2079x
-    chown nfc nfc /dev/bcm2079x
-    mkdir /data/nfc
-    mkdir /data/nfc/param
-    chmod 0770 /data/nfc
-    chmod 0770 /data/nfc/param
-    chown nfc nfc /data/nfc
-    chown nfc nfc /data/nfc/param
-
     # MDNIE
     chown system system  /sys/class/mdnie/mdnie/lcdtype
     chown system system  /sys/class/mdnie/mdnie/lcd_power
@@ -425,10 +415,6 @@ on post-fs-data
     chown radio system /sys/devices/platform/sec-thermistor/temperature
     chown radio system /sys/class/power_supply/battery/siop_level
     chown radio system /sys/class/power_supply/battery/test_charge_current
-
-    # Permissions for IR_LED
-    chown system radio /sys/class/sec/sec_ir/ir_send
-    chown system radio /sys/class/sec/sec_ir/ir_send_result
 
     # Permission for HALL IC
     chown system radio /sys/class/sec/sec_key/hall_detect

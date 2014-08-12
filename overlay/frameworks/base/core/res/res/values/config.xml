@@ -200,7 +200,6 @@
          config to 7. -->
     <integer name="config_deviceHardwareKeys">7</integer>
 
-
     <!-- Device supports LED flashlight -->
     <bool name="config_enableTorch">true</bool>
 
@@ -210,6 +209,7 @@
 
          The default value is false which represents AOSP behavior. -->
     <bool name="config_smsUseExpectMore">true</bool>
+
     <!-- SD card is hot-pluggable on this platform -->
     <bool name="config_batterySdCardAccessibility">true</bool>
 </resources>

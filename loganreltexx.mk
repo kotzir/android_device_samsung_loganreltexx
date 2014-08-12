@@ -24,12 +24,8 @@ DEVICE_PACKAGE_OVERLAYS += device/samsung/loganreltexx/overlay
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.telephony.gsm.xml:system/etc/permissions/android.hardware.telephony.gsm.xml \
     frameworks/base/nfc-extras/com.android.nfc_extras.xml:system/etc/permissions/com.android.nfc_extras.xml \
-    frameworks/native/data/etc/android.hardware.sensor.accelerometer.xml:system/etc/permissions/android.hardware.sensor.accelerometer.xml \
-    frameworks/native/data/etc/android.hardware.sensor.proximity.xml:system/etc/permissions/android.hardware.sensor.proximity.xml \
-    frameworks/native/data/etc/android.hardware.sensor.compass.xml:system/etc/permissions/android.hardware.sensor.compass.xml \
     frameworks/native/data/etc/android.hardware.nfc.xml:system/etc/permissions/android.hardware.nfc.xml \
-    frameworks/native/data/etc/android.hardware.nfc.hce.xml:system/etc/permissions/android.hardware.nfc.hce.xml \
-    frameworks/native/data/etc/android.hardware.bluetooth.xml:system/etc/permissions/android.hardware.bluetooth.xml
+    frameworks/native/data/etc/android.hardware.nfc.hce.xml:system/etc/permissions/android.hardware.nfc.hce.xml
 
 # Device uses high-density artwork where available
 PRODUCT_AAPT_CONFIG := normal hdpi
@@ -47,9 +43,9 @@ PRODUCT_PACKAGES += \
 
 # NFC packages
 PRODUCT_PACKAGES += \
-    nfc_nci.msm8960 \
     NfcNci \
     Tag \
+    nfc_nci.msm8960 \
     com.android.nfc_extras
 
 # NFCEE access control
@@ -141,7 +137,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Common build properties
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.product_ship=true \
-    rild.libpath=/system/lib/libsec-ril.so \
+    rild.libpath=/system/lib/libril-qc-qmi-1.so \
     rild.libargs=-d/dev/smd0 \
     telephony.lteOnGsmDevice=1 \
     ro.telephony.default_network=9 \
@@ -162,7 +158,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.audio.vr.enable=false \
     persist.audio.handset.mic=digital \
     lpa.decode=true \
-    lpa.use-stagefright=true \
     persist.rild.nitz_plmn="" \
     persist.rild.nitz_long_ons_0="" \
     persist.rild.nitz_long_ons_1="" \
@@ -187,7 +182,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Enable Samsung EMS dial path
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.telephony.ril.v3=samsungEMSReq,newDialCode
+    ro.telephony.ril.v3=samsungEMSReq
 
 # call common msm8930
 $(call inherit-product, device/samsung/msm8930-common/msm8930.mk)

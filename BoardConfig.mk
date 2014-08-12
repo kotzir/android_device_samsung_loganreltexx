@@ -79,7 +79,6 @@ BOARD_HAVE_DOCK_USBAUDIO := true
 
 # Charger
 BOARD_CHARGER_ENABLE_SUSPEND := true
-BOARD_CHARGER_RES :=
 
 # Enable QCOM FM feature
 QCOM_FM_ENABLED := true
