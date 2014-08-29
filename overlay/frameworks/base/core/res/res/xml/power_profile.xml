@@ -5,8 +5,8 @@
     <item name="bluetooth.active">17</item>
     <item name="bluetooth.on">0.3</item>
     <item name="screen.full">153</item>
-    <item name="wifi.on">0.3</item>
-    <item name="wifi.active">96</item>
+    <item name="wifi.on">1</item>
+    <item name="wifi.active">127</item>
     <item name="wifi.scan">70</item>
     <item name="dsp.audio">29</item>
     <item name="dsp.video">151</item>
