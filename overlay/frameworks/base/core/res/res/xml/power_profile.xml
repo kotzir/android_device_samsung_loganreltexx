@@ -18,19 +18,27 @@
         <value>3.4</value>
     </array>
     <array name="cpu.speeds">
-        <value>12000000</value>
-        <value>10000000</value>
-        <value>800000</value>
-        <value>500000</value>
-        <value>200000</value>
+        <value>1188000</value>
+        <value>1134000</value>
+        <value>1026000</value>
+        <value>918000</value>
+        <value>810000</value>
+        <value>702000</value>
+        <value>594000</value>
+        <value>486000</value>
+        <value>384000</value>
     </array>
     <item name="cpu.idle">2.69</item>
     <array name="cpu.active">
         <value>172</value>
+        <value>158</value>
         <value>140</value>
+        <value>130</value>
         <value>118</value>
+        <value>89</value>
+        <value>84</value>
         <value>78</value>
-        <value>55</value>
+        <value>61</value>
     </array>
     <item name="battery.capacity">1800</item>
 </device>
