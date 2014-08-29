@@ -38,7 +38,7 @@ TARGET_KERNEL_SELINUX_CONFIG := selinux_defconfig
 TARGET_BOOTLOADER_BOARD_NAME := MSM8960
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := loganreltexx,loganrelte,GT-S7275R
+TARGET_OTA_ASSERT_DEVICE := loganreltexx,loganrelte,loganre,GT-S7275R
 
 # Recovery
 BOARD_USES_MMCUTILS := true
