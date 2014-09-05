@@ -199,7 +199,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.telephony.ril_class=SamsungQualcommRIL
 
-
 # Enable Samsung EMS dial path
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.telephony.ril.v3=samsungEMSReq
