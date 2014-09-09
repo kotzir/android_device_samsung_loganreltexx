@@ -315,6 +315,10 @@ on post-fs-data
     # Permissions for NCM
     chmod 0660 /sys/class/android_usb/android0/terminal_version
     chown system system /sys/class/android_usb/android0/terminal_version
+    
+    # NFC local data and nfcee xml storage
+    mkdir /data/nfc 0770 nfc nfc
+    mkdir /data/nfc/param 0770 nfc nfc
 
     # NFC_NXP
     setprop ro.nfc.port "I2C"
