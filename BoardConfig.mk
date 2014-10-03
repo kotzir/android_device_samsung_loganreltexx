@@ -34,7 +34,7 @@ TARGET_KERNEL_SOURCE         := kernel/samsung/msm8930-common
 TARGET_KERNEL_CONFIG         := cyanogen_loganre_defconfig
 TARGET_KERNEL_VARIANT_CONFIG := msm8930_loganre_eur_lte_defconfig
 TARGET_KERNEL_SELINUX_CONFIG := selinux_defconfig
-#TARGET_KERNEL_CUSTOM_TOOLCHAIN := sabermod-arm-eabi-4.7
+#TARGET_KERNEL_CUSTOM_TOOLCHAIN := linaro-arm-eabi-4.7
 
 TARGET_BOOTLOADER_BOARD_NAME := MSM8960
 
