@@ -204,6 +204,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.telephony.ril.v3=samsungEMSReq
 
+# Enable KSM by default 	
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.ksm.default=1
+
 # call common msm8930
 $(call inherit-product, device/samsung/msm8930-common/msm8930.mk)
 
