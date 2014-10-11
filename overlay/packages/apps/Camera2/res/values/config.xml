@@ -18,8 +18,10 @@
 -->
 
 <resources>
-    <!-- Use ZSL mode for Qualcomm cameras -->
+    <!-- Zero shutter lag mode -->
     <bool name="enableZSL">false</bool>
+    <!-- Allow HDR and ZSL together -->
+    <bool name="enableHDRWithZSL">false</bool>
     <!-- Enable histogram support -->
     <bool name="enableHistogram">true</bool>
 </resources>
