@@ -1,2 +1,1 @@
-add_lunch_combo cm_loganreltexx-eng
 add_lunch_combo cm_loganreltexx-userdebug
