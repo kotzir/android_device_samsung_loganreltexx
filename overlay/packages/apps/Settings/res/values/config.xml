@@ -22,12 +22,4 @@
     <!-- Volume Rocker Wake Support. Some devices do not support (PMU) this.
          Setting to false will disable Volume Rocker Wake support -->
     <bool name="config_show_volumeRockerWake">true</bool>
-
-    <!-- SAR Level for a device -->
-    <!-- Must be overlaid by device -->
-    <bool name="config_show_sar_enable" translatable="false">true</bool>
-    <!-- Maximum Specific Absorption Rate for head -->
-    <string name="sar_head_level" translatable="false">0.582</string>
-    <!-- Maximum Specific Absorption Rate for body -->
-    <string name="sar_body_level" translatable="false">0.594</string>
 </resources>
