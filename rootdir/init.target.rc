@@ -394,9 +394,9 @@ service thermald /system/bin/thermald
     user root
     group root
 
-service mpdecision /system/bin/mpdecision --no_sleep --avg_comp
-    user root
-    disabled
+#service mpdecision /system/bin/mpdecision --no_sleep --avg_comp
+#    user root
+#    disabled
 
 service qrngd /system/bin/qrngd -f
     class main
