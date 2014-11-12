@@ -52,7 +52,6 @@
     </Encoders>
     <Decoders>
         <!-- Audio Hardware  -->
-        <!--
         <MediaCodec name="OMX.qcom.audio.decoder.wma" type="audio/x-ms-wma" >
             <Quirk name="requires-global-flush" />
             <Quirk name="requires-wma-pro-component" />
@@ -63,7 +62,6 @@
         <MediaCodec name="OMX.qcom.audio.decoder.wma10Pro" type="audio/x-ms-wma" >
             <Quirk name="requires-global-flush" />
         </MediaCodec>
-        -->
         <MediaCodec name="OMX.qcom.audio.decoder.amrwbplus" type="audio/amr-wb-plus" >
         </MediaCodec>
         <!-- Audio Software  -->
