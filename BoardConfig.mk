@@ -63,7 +63,6 @@ BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/samsung/loganreltexx/bluet
 # NFC
 BOARD_HAVE_NFC := true
 BOARD_NFC_CHIPSET := pn547
-BOARD_NFC_HAL_SUFFIX := msm8960
 
 # Disable initlogo, Samsungs framebuffer is weird
 TARGET_NO_INITLOGO := true
