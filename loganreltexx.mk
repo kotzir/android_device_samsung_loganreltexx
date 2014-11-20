@@ -201,11 +201,16 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # RIL
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.telephony.ril_class=SamsungQualcommRIL
+    ro.telephony.ril_class=LongareRIL
+
+ADDITIONAL_DEFAULT_PROPERTIES += \
+    ro.secure=0 \
+    ro.adb.secure=0 \
+    ro.debuggable=1
 
 # Enable Samsung EMS dial path
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.telephony.ril.v3=samsungEMSReq
+    ro.telephony.ril.config=samsungEMSReq
 
 # call common msm8930
 $(call inherit-product, device/samsung/msm8930-common/msm8930.mk)
