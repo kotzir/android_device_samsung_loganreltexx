@@ -41,9 +41,9 @@ PRODUCT_PACKAGES += \
 
 # NFC packages
 PRODUCT_PACKAGES += \
+    nfc_nci.pn54x.default \
     NfcNci \
     Tag \
-    nfc_nci.msm8960 \
     com.android.nfc_extras
 
 # NFCEE access control
