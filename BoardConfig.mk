@@ -96,3 +96,6 @@ TARGET_VIDEO_PREVIEW_ALWAYS_MAX := true
 
 # PowerHAL
 TARGET_POWERHAL_VARIANT := 
+
+# Custom RIL class
+BOARD_RIL_CLASS := ../../../device/samsung/loganreltexx/ril/
