@@ -147,7 +147,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Common build properties
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.product_ship=true \
-    rild.libpath=/system/lib/libril-qc-qmi-1.so \
+    rild.libpath=/system/lib/libsec-ril.so \
     rild.libargs=-d/dev/smd0 \
     telephony.lteOnGsmDevice=1 \
     ro.telephony.default_network=9 \
