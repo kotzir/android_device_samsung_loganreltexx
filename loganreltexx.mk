@@ -201,7 +201,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # RIL
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.telephony.ril_class=LongareRIL
+    ro.telephony.ril_class=LoganreRIL
 
 ADDITIONAL_DEFAULT_PROPERTIES += \
     ro.secure=0 \
