@@ -218,6 +218,10 @@ ADDITIONAL_DEFAULT_PROPERTIES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.telephony.ril.config=samsungEMSReq
 
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.product.locale.language=en \
+    ro.product.locale.region=GB
+
 # call common msm8930
 $(call inherit-product, device/samsung/msm8930-common/msm8930.mk)
 
