@@ -203,7 +203,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     audio.gapless.playback.disable=true \
     qcom.hw.aac.encoder=true \
     ro.config.max_starting_bg=8 \
-    camera2.portability.force_api=1
+    camera2.portability.force_api=1 \
+    mm.enable.smoothstreaming=true
 
 # RIL
 PRODUCT_PROPERTY_OVERRIDES += \
