@@ -158,6 +158,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.ril.hsxpa=1 \
     ro.ril.gprsclass=10 \
     persist.radio.add_power_save=1 \
+    persist.radio.apm_sim_not_pwdn=1 \
     persist.radio.use_se_table_only=1 \
     persist.radio.fill_eons=1 \
     persist.radio.prefer_spn=0 \
