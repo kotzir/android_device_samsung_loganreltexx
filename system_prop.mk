@@ -8,6 +8,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # RIL
 PRODUCT_PROPERTY_OVERRIDES += \
+    rild.libpath=/system/lib/libsec-ril.so \
+    rild.libargs=-d/dev/smd0 \
+    telephony.lteOnGsmDevice=1 \
+    ro.telephony.default_network=9 \
     persist.rild.nitz_plmn="" \
     persist.rild.nitz_long_ons_0="" \
     persist.rild.nitz_long_ons_1="" \
@@ -34,6 +38,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     audio.gapless.playback.disable=true \
     audio.offload.disable=1 \
     lpa.decode=false \
+    media.stagefright.use-awesome=true \
     mm.enable.qcom_parser=3407871 \
     mm.enable.smoothstreaming=true \
     persist.audio.fluence.mode=endfire \
@@ -57,7 +62,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Misc
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.chipname=MSM8930AB \
+    ro.chipname=MSM8930 \
     ro.product_ship=true \
     ro.warmboot.capability=1 \
     ro.vold.umsdirtyratio=50 \
