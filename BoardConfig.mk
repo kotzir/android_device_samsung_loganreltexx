@@ -98,6 +98,3 @@ TARGET_POWERHAL_VARIANT :=
 
 # Custom RIL class
 BOARD_RIL_CLASS := ../../../device/samsung/loganreltexx/ril/
-
-# SELinux
-include device/qcom/sepolicy/sepolicy.mk
