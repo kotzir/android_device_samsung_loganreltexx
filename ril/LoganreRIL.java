@@ -31,7 +31,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 
 /**
- * RIL customization for Galaxy S4 Mini (GSM) devices
+ * RIL customization for Galaxy Ace 3 (GSM) devices
  *
  * {@hide}
  */
