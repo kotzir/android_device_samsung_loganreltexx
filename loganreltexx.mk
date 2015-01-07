@@ -134,7 +134,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/sec_config:system/etc/sec_config
 
-# call common serrano system props
+# call common loganre system props
 $(call inherit-product, device/samsung/loganreltexx/system_prop.mk)
 
 # call common msm8930
