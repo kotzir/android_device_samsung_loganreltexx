@@ -1,3 +1,8 @@
+ADDITIONAL_DEFAULT_PROPERTIES += \		
+    ro.secure=0 \		
+    ro.adb.secure=0 \		
+    ro.debuggable=1
+
 # Set composition for USB
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     persist.sys.usb.config=mtp
@@ -5,6 +10,10 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
 # Set read only default composition for USB
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.sys.usb.default.config=mtp
+
+# Set USB OTG enabled to add support for USB storage type
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.sys.isUsbOtgEnabled=1
 
 # RIL
 PRODUCT_PROPERTY_OVERRIDES += \
