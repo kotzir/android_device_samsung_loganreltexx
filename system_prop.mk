@@ -1,6 +1,7 @@
-ADDITIONAL_DEFAULT_PROPERTIES += \		
-    ro.secure=0 \		
-    ro.adb.secure=0 \		
+# Debugging by default
+ADDITIONAL_DEFAULT_PROPERTIES += \
+    ro.secure=0 \
+    ro.adb.secure=0 \
     ro.debuggable=1
 
 # Set composition for USB
