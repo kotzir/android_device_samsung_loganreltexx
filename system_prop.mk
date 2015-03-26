@@ -6,10 +6,6 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.sys.usb.default.config=mtp
 
-# Set USB OTG enabled to add support for USB storage type
-PRODUCT_PROPERTY_OVERRIDES += \
-    persist.sys.isUsbOtgEnabled=1
-
 # RIL
 PRODUCT_PROPERTY_OVERRIDES += \
     rild.libpath=/system/lib/libsec-ril.so \
@@ -71,7 +67,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.config.max_starting_bg=8 \
     persist.timed.enable=true \
     wifi.interface=wlan0 \
-    ro.qualcomm.bt.hci_transport=smd
+    ro.qualcomm.bt.hci_transport=smd \
+    persist.sys.isUsbOtgEnabled=true \
+    ro.enable_boot_charger_mode=1
 
 # QC Perf
 PRODUCT_PROPERTY_OVERRIDES += \
