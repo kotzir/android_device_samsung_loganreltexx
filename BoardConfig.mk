@@ -103,7 +103,7 @@ BOARD_RIL_CLASS := ../../../device/samsung/loganreltexx/ril/
 BOARD_HARDWARE_CLASS := $(LOCAL_PATH)/cmhw
 
 # TWRP config
-TARGET_RECOVERY_FSTAB := $(LOCAL_PATH)/recovery/twrp.fstab
+TARGET_RECOVERY_FSTAB := device/samsung/loganreltexx/recovery/twrp.fstab
 DEVICE_RESOLUTION := 480x800
 RECOVERY_GRAPHICS_USE_LINELENGTH := true
 RECOVERY_SDCARD_ON_DATA := true
