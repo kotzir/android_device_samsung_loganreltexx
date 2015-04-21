@@ -65,4 +65,4 @@ on property:dev.bootcomplete=1
     write /sys/module/msm_thermal/core_control/enabled 1
     chown system system /sys/devices/system/cpu/cpu1/online
     chmod 664 /sys/devices/system/cpu/cpu1/online
-    #start mpdecision
+    start mpdecision
