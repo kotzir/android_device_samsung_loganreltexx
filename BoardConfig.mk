@@ -104,7 +104,7 @@ BOARD_HARDWARE_CLASS := $(LOCAL_PATH)/cmhw
 
 # TWRP config
 TARGET_RECOVERY_FSTAB := device/samsung/loganreltexx/recovery/twrp.fstab
-DEVICE_RESOLUTION := 480x800
+TW_THEME := portrait_hdpi
 RECOVERY_GRAPHICS_USE_LINELENGTH := true
 RECOVERY_SDCARD_ON_DATA := true
 TW_INTERNAL_STORAGE_PATH := "/data/media/0"
