@@ -57,6 +57,7 @@ BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/samsung/loganreltexx/bluet
 # NFC
 #BOARD_HAVE_NFC := true
 #BOARD_NFC_CHIPSET := pn547
+#BOARD_NFC_LPM_LOSES_CONFIG := true
 
 # Audio
 BOARD_HAVE_SAMSUNG_AUDIO := true
