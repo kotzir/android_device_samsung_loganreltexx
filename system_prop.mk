@@ -54,7 +54,19 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.sf.lcd_density=240 \
     ro.opengles.version=196608 \
     ro.qualcomm.cabl=0 \
-    ro.hwui.text_large_cache_height=2048
+    ro.hwui.text_large_cache_height=2048 \
+    ro.hwui.text_cache_width=2048 \
+    ro.hwui.text_cache_height=256
+
+#Performance and battery tweaks
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.ril.disable.power.collapse=1 \
+    debug.performance.tuning=1 \
+    video.accelerate.hw=1 \
+    debug.sf.hw=1 \
+    persist.sys.ui.hw=true \
+    ro.media.dec.jpeg.memcap=8000000 \
+    ro.media.enc.jpeg.quality=100
 
 # Camera
 PRODUCT_PROPERTY_OVERRIDES += \
