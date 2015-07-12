@@ -58,7 +58,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.hwui.text_cache_width=2048 \
     ro.hwui.text_cache_height=256
 
-#Performance and battery tweaks
+# Performance and battery tweaks
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.ril.disable.power.collapse=1 \
     debug.performance.tuning=1 \
@@ -66,7 +66,16 @@ PRODUCT_PROPERTY_OVERRIDES += \
     debug.sf.hw=1 \
     persist.sys.ui.hw=true \
     ro.media.dec.jpeg.memcap=8000000 \
-    ro.media.enc.jpeg.quality=100
+    ro.media.enc.jpeg.quality=100 \
+    pm.sleep_mode=1 \
+    ro.mot.eri.losalert.delay=500 \
+    wifi.supplicant_scan_interval=180 \
+    ro.max.fling_velocity=25000 \
+    ro.min.fling_velocity=12000 \
+    windowsmgr.max_events_per_sec=150 \
+    dalvik.vm.heapgrowthlimit=128 \
+    persist.service.lgospd.enable=0 \
+    persist.service.pcsync.enable=0
 
 # Camera
 PRODUCT_PROPERTY_OVERRIDES += \
