@@ -73,7 +73,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.max.fling_velocity=25000 \
     ro.min.fling_velocity=12000 \
     windowsmgr.max_events_per_sec=150 \
-    dalvik.vm.heapgrowthlimit=128 \
     persist.service.lgospd.enable=0 \
     persist.service.pcsync.enable=0
 
