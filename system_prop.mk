@@ -60,7 +60,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Performance and battery tweaks
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.ril.disable.power.collapse=1 \
+    ro.ril.disable.power.collapse=0 \
     debug.performance.tuning=1 \
     video.accelerate.hw=1 \
     debug.sf.hw=1 \
