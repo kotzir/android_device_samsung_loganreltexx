@@ -35,6 +35,9 @@ TARGET_KERNEL_CONFIG         := cyanogen_loganre_defconfig
 TARGET_KERNEL_VARIANT_CONFIG := msm8930_loganre_eur_lte_defconfig
 TARGET_KERNEL_SELINUX_CONFIG := selinux_defconfig
 
+TARGET_NOT_USE_GZIP_RECOVERY_RAMDISK := true
+BOARD_CUSTOM_BOOTIMG_MK := device/samsung/loganreltexx/custombootimg.mk
+
 TARGET_BOOTLOADER_BOARD_NAME := MSM8960
 
 # Assert
@@ -55,6 +58,7 @@ BOARD_RECOVERYIMAGE_PARTITION_SIZE := 10485760
 BOARD_SYSTEMIMAGE_PARTITION_SIZE := 1698693120
 BOARD_USERDATAIMAGE_PARTITION_SIZE := 5693733888
 BOARD_FLASH_BLOCK_SIZE := 131072
+BOARD_HAS_LARGE_FILESYSTEM := true
 
 # Bluetooth
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/samsung/loganreltexx/bluetooth
@@ -113,7 +117,7 @@ TW_EXTERNAL_STORAGE_PATH := "/external_sd"
 TW_EXTERNAL_STORAGE_MOUNT_POINT := "external_sd"
 TW_NO_REBOOT_BOOTLOADER := true
 TW_HAS_DOWNLOAD_MODE := true
-TW_INCLUDE_L_CRYPTO := true
+TW_INCLUDE_CRYPTO := true
 TW_INCLUDE_CRYPTO_SAMSUNG := true
 BOARD_HAS_NO_REAL_SDCARD := true
 TW_CRYPTO_FS_TYPE := "ext4"
@@ -129,3 +133,19 @@ TARGET_USE_CUSTOM_LUN_FILE_PATH := /sys/devices/platform/msm_hsusb/gadget/lun%d/
 BOARD_HAS_NO_SELECT_BUTTON := true
 BOARD_RECOVERY_SWIPE := true
 BOARD_SUPPRESS_EMMC_WIPE := true
+
+# MultiROM config. MultiROM also uses parts of TWRP config
+MR_INPUT_TYPE := type_b
+MR_INIT_DEVICES := device/samsung/loganreltexx/multirom/mr_init_devices.c
+MR_DPI := hdpi
+MR_FSTAB := device/samsung/loganreltexx/multirom/multirom.fstab
+MR_KEXEC_MEM_MIN := 0x85000000
+MR_USE_MROM_FSTAB := true
+MR_DEVICE_HOOKS := device/samsung/loganreltexx/multirom/mr_hooks.c
+MR_DEVICE_HOOKS_VER := 1
+# MR_PIXEL_FORMAT := "RGBX_8888"
+# MR_CONTINUOUS_FB_UPDATE := true
+# MR_USE_QCOM_OVERLAY := true
+# MR_QCOM_OVERLAY_HEADER := device/samsung/loganreltexx/multirom/framebuffer_qcom_overlay.h
+# MR_QCOM_OVERLAY_CUSTOM_PIXEL_FORMAT := MDP_RGBX_8888
+# MR_RD_ADDR := 0x82500000
