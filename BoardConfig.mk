@@ -143,6 +143,8 @@ MR_KEXEC_MEM_MIN := 0x85000000
 MR_USE_MROM_FSTAB := true
 MR_DEVICE_HOOKS := device/samsung/loganreltexx/multirom/mr_hooks.c
 MR_DEVICE_HOOKS_VER := 1
+
+
 # MR_PIXEL_FORMAT := "RGBX_8888"
 # MR_CONTINUOUS_FB_UPDATE := true
 # MR_USE_QCOM_OVERLAY := true
