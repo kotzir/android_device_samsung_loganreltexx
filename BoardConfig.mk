@@ -36,6 +36,7 @@ TARGET_KERNEL_VARIANT_CONFIG := msm8930_loganre_eur_lte_defconfig
 TARGET_KERNEL_SELINUX_CONFIG := selinux_defconfig
 
 TARGET_NOT_USE_GZIP_RECOVERY_RAMDISK := true
+TARGET_RECOVERY_DEVICE_DIRS += device/samsung/loganreltexx
 BOARD_CUSTOM_BOOTIMG_MK := device/samsung/loganreltexx/custombootimg.mk
 
 TARGET_BOOTLOADER_BOARD_NAME := MSM8960
@@ -143,6 +144,7 @@ MR_KEXEC_MEM_MIN := 0x85000000
 MR_USE_MROM_FSTAB := true
 MR_DEVICE_HOOKS := device/samsung/loganreltexx/multirom/mr_hooks.c
 MR_DEVICE_HOOKS_VER := 1
+MR_DEVICE_VARIANTS := loganrelte
 
 
 # MR_PIXEL_FORMAT := "RGBX_8888"
