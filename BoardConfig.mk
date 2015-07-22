@@ -36,7 +36,6 @@ TARGET_KERNEL_VARIANT_CONFIG := msm8930_loganre_eur_lte_defconfig
 TARGET_KERNEL_SELINUX_CONFIG := selinux_defconfig
 
 TARGET_NOT_USE_GZIP_RECOVERY_RAMDISK := true
-TARGET_RECOVERY_DEVICE_DIRS += device/samsung/loganreltexx
 BOARD_CUSTOM_BOOTIMG_MK := device/samsung/loganreltexx/custombootimg.mk
 
 TARGET_BOOTLOADER_BOARD_NAME := MSM8960
