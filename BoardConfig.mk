@@ -145,6 +145,11 @@ MR_DEVICE_HOOKS := device/samsung/loganreltexx/multirom/mr_hooks.c
 MR_DEVICE_HOOKS_VER := 1
 MR_DEVICE_VARIANTS := loganrelte
 
+# Framebuffer testing
+MR_PIXEL_FORMAT := "RGBX_8888"
+MR_USE_QCOM_OVERLAY := true
+MR_QCOM_OVERLAY_HEADER := device/samsung/loganreltexx/multirom/mr_qcom_overlay.h
+MR_QCOM_OVERLAY_CUSTOM_PIXEL_FORMAT := MDP_RGBX_8888
 
 # MR_PIXEL_FORMAT := "RGBX_8888"
 # MR_CONTINUOUS_FB_UPDATE := true
