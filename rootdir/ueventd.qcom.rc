@@ -156,6 +156,9 @@
 /sys/devices/virtual/input/input*	acc_delay	0660	system	radio
 /sys/devices/virtual/input/input*	gyro_delay	0660	system	radio
 
+# doubletap2wake
+/sys/android_touch/doubletap2wake		0660	system	system
+
 # wlan
 /dev/wcnss_wlan           0660   system     system
 /dev/wcnss_ctrl           0660   system     system

@@ -223,6 +223,9 @@ on post-fs-data
 on property:init.svc.wpa_supplicant=stopped
     stop dhcpcd
 
+    # Enable double tap to wake
+    write /sys/android_touch/doubletap2wake 1
+
 service irsc_util /system/bin/logwrapper /system/bin/irsc_util "/etc/sec_config"
     class main
     user root
