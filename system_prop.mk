@@ -101,3 +101,11 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     dalvik.vm.image-dex2oat-filter=everything \
     dalvik.vm.dex2oat-filter=everything
+
+# Low-RAM optimizations
+ADDITIONAL_BUILD_PROPERTIES += \
+	ro.config.low_ram=true \
+	persist.sys.force_highendgfx=true \
+	dalvik.vm.jit.codecachesize=0 \
+	config.disable_atlas=true \
+	ro.sys.fw.bg_apps_limit=16
