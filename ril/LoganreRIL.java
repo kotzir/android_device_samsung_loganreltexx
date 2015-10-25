@@ -46,11 +46,11 @@ public class LoganreRIL extends RIL {
 
     public LoganreRIL(Context context, int preferredNetworkType,
             int cdmaSubscription, Integer instanceId) {
-        this(context, preferredNetworkType, cdmaSubscription);
+        super(context, preferredNetworkType, cdmaSubscription, instanceId);
     }
 
     public LoganreRIL(Context context, int networkMode, int cdmaSubscription) {
-        super(context, networkMode, cdmaSubscription);
+        super(context, networkMode, cdmaSubscription, null);
         mQANElements = 6;
     }
 
