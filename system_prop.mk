@@ -105,22 +105,4 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Low-RAM optimizations
 ADDITIONAL_BUILD_PROPERTIES += \
-	ro.config.low_ram=true \
-	persist.sys.force_highendgfx=true \
-	dalvik.vm.jit.codecachesize=0 \
 	config.disable_atlas=true \
-	ro.sys.fw.bg_apps_limit=16
-
-# Trim properties
-PRODUCT_PROPERTY_OVERRIDES += \
-	ro.sys.fw.use_trim_settings=true \
-	ro.sys.fw.empty_app_percent=50 \
-	ro.sys.fw.trim_empty_percent=100 \
-	ro.sys.fw.trim_cache_percent=100 \
-	ro.sys.fw.trim_enable_memory=900775936
-
-# Enable B service adj transition by default
-PRODUCT_PROPERTY_OVERRIDES += \
-	ro.sys.fw.bservice_enable=true \
-	ro.sys.fw.bservice_limit=5 \
-	ro.sys.fw.bservice_age=5000 \
