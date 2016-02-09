@@ -110,6 +110,7 @@ BOARD_HARDWARE_CLASS := $(LOCAL_PATH)/cmhw
 # TWRP config
 TARGET_RECOVERY_FSTAB := device/samsung/loganreltexx/recovery/twrp.fstab
 TW_THEME := portrait_hdpi
+DEVICE_RESOLUTION := 480x800
 RECOVERY_GRAPHICS_FORCE_USE_LINELENGTH := true
 RECOVERY_SDCARD_ON_DATA := true
 TW_INTERNAL_STORAGE_PATH := "/data/media/0"
@@ -119,7 +120,6 @@ TW_EXTERNAL_STORAGE_MOUNT_POINT := "external_sd"
 TW_NO_REBOOT_BOOTLOADER := true
 TW_HAS_DOWNLOAD_MODE := true
 TW_INCLUDE_CRYPTO := true
-TW_INCLUDE_CRYPTO_SAMSUNG := true
 BOARD_HAS_NO_REAL_SDCARD := true
 TW_CRYPTO_FS_TYPE := "ext4"
 TW_CRYPTO_REAL_BLKDEV := "/dev/block/mmcblk0p23"
@@ -139,12 +139,14 @@ BOARD_SUPPRESS_EMMC_WIPE := true
 MR_INPUT_TYPE := type_b
 MR_INIT_DEVICES := device/samsung/loganreltexx/multirom/mr_init_devices.c
 MR_DPI := hdpi
-MR_FSTAB := device/samsung/loganreltexx/multirom/multirom.fstab
+MR_FSTAB := device/samsung/loganreltexx/recovery/twrp.fstab
 MR_KEXEC_MEM_MIN := 0x85000000
 MR_USE_MROM_FSTAB := true
 MR_DEVICE_HOOKS := device/samsung/loganreltexx/multirom/mr_hooks.c
 MR_DEVICE_HOOKS_VER := 1
 MR_DEVICE_VARIANTS := loganrelte
+TARGET_RECOVERY_IS_MULTIROM := true
+# TW_USE_TOOLBOX := true
 
 # Framebuffer testing
 MR_PIXEL_FORMAT := "RGBX_8888"
@@ -157,4 +159,4 @@ MR_QCOM_OVERLAY_CUSTOM_PIXEL_FORMAT := MDP_RGBX_8888
 # MR_USE_QCOM_OVERLAY := true
 # MR_QCOM_OVERLAY_HEADER := device/samsung/loganreltexx/multirom/framebuffer_qcom_overlay.h
 # MR_QCOM_OVERLAY_CUSTOM_PIXEL_FORMAT := MDP_RGBX_8888
-# MR_RD_ADDR := 0x82500000
+MR_RD_ADDR := 0x82500000
