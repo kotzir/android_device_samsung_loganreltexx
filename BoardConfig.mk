@@ -97,4 +97,4 @@ TARGET_POWERHAL_VARIANT :=
 BOARD_RIL_CLASS := ../../../device/samsung/loganreltexx/ril/
 
 # CMHW
-BOARD_HARDWARE_CLASS := $(LOCAL_PATH)/cmhw
+BOARD_HARDWARE_CLASS := device/samsung/serrano-common/cmhw
