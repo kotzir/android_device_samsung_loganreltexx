@@ -109,7 +109,7 @@ BOARD_HARDWARE_CLASS := $(LOCAL_PATH)/cmhw
 
 # TWRP config
 TARGET_RECOVERY_FSTAB := device/samsung/loganreltexx/recovery/twrp.fstab
-TARGET_PREBUILT_RECOVERY_KERNEL := device/samsung/loganreltexx/recovery/kernel
+# TARGET_PREBUILT_RECOVERY_KERNEL := device/samsung/loganreltexx/recovery/kernel
 TW_THEME := portrait_hdpi
 DEVICE_RESOLUTION := 480x800
 RECOVERY_GRAPHICS_FORCE_USE_LINELENGTH := true
@@ -129,15 +129,13 @@ TW_CRYPTO_FS_OPTIONS := "nosuid,nodev,noatime,noauto_da_alloc,journal_async_comm
 TW_CRYPTO_FS_FLAGS := "0x00000406"
 TW_CRYPTO_KEY_LOC := "footer"
 TW_BRIGHTNESS_PATH := /sys/class/leds/lcd-backlight/brightness
-# TW_NO_EXFAT_FUSE := false
-# TW_NO_EXFAT := false
+TW_NO_EXFAT_FUSE := false
+TW_NO_EXFAT := false
 TARGET_USE_CUSTOM_LUN_FILE_PATH := /sys/devices/platform/msm_hsusb/gadget/lun%d/file
 BOARD_HAS_NO_SELECT_BUTTON := true
 BOARD_RECOVERY_SWIPE := true
 BOARD_SUPPRESS_EMMC_WIPE := true
 TW_NO_USB_STORAGE := true
-TW_NO_BATT_PERCENT := true
-TW_NO_CPU_TEMP := true
 
 # MultiROM config. MultiROM also uses parts of TWRP config
 MR_INPUT_TYPE := type_b
