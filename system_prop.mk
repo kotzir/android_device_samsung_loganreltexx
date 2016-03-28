@@ -106,3 +106,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Low-RAM optimizations
 ADDITIONAL_BUILD_PROPERTIES += \
 	config.disable_atlas=true \
+
+# Intel's VM tunable recommendations
+ADDITIONAL_BUILD_PROPERTIES += \
+	dalvik.vm.heapgrowthlimit=64m \
+	dalvik.vm.heapsize=174m \
+	dalvik.vm.heapmaxfree=2m
