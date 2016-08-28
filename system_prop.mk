@@ -91,7 +91,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     wifi.interface=wlan0 \
     ro.qualcomm.bt.hci_transport=smd \
     persist.sys.isUsbOtgEnabled=true \
-    ro.sys.fw.dex2oat_thread_count=4
+    dalvik.vm.dex2oat-swap=false \
+    ro.sys.fw.dex2oat_thread_count=2
 
 # QC Perf
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -99,9 +100,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Art
 PRODUCT_PROPERTY_OVERRIDES += \
-    dalvik.vm.image-dex2oat-filter=everything \
-    dalvik.vm.dex2oat-filter=everything \
-    dalvik.vm.dex2oat-flags=--no-watch-dog
+    dalvik.vm.dex2oat-flags=--no-watch-dog \
 
 # Low-RAM optimizations
 ADDITIONAL_BUILD_PROPERTIES += \
