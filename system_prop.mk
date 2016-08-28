@@ -54,9 +54,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.sf.lcd_density=240 \
     ro.opengles.version=196608 \
     ro.qualcomm.cabl=0 \
-    ro.hwui.text_large_cache_height=2048 \
-    ro.hwui.text_cache_width=2048 \
-    ro.hwui.text_cache_height=256
+    ro.hwui.text_large_cache_height=1024
 
 # Performance and battery tweaks
 PRODUCT_PROPERTY_OVERRIDES += \
